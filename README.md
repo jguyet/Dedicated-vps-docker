@@ -37,7 +37,7 @@ look Dockerfile https://github.com/jguyet/Dedicated-vps-docker/blob/master/Docke
 `docker attach CONTAINERNAME`  
 
 #### VM ssh installation :
-`apt-get install openssh-server`
+`apt-get install openssh-server`  
 `vim /etc/ssh/sshd_config`  
 add ->  
 `PermitRootLogin yes`
