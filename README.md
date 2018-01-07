@@ -57,5 +57,17 @@ CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
 FLUSH PRIVILEGES;`
 
+#### Java8 installation
+`apt-get install default-jre
+apt-get install default-jdk
+apt-get install software-properties-common
+add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main"
+apt-get update
+apt-get install oracle-java8-installer
+javac -version`
+
+`Output :
+javac 1.8.0_111`
+
 #### DOCKER DOCUMENTATION
 https://docs.docker.com/engine/reference/commandline/docker/
