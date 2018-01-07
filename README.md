@@ -15,7 +15,7 @@ you need a complementary ip on your server
 `mkdir project-vm`  
 `cd project-vm`  
 `vim Dockerfile`  
-look Dockerfile
+look Dockerfile https://github.com/jguyet/Dedicated-vps-docker/blob/master/Dockerfile
 
 #### ADD on Dockerfile your configuration and build image after Dockerfile configured
 `docker build -t="imageName" .`
