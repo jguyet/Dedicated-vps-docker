@@ -9,7 +9,7 @@ you need a complementary ip on your server
 apt-get install docker-ce`
 
 #### IMPORT OS IMAGE
-`docker pull debian`
+`docker pull debian:jessie`
 
 #### CREATE DOCKERFILE
 `mkdir project-vm
