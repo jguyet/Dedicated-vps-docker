@@ -57,7 +57,7 @@ add ->
 `GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';`  
 `FLUSH PRIVILEGES;`  
 
-#### Java8 installation
+#### Java8 or Java9 installation
 `apt-get install default-jre`  
 `apt-get install default-jdk`  
 `apt-get install software-properties-common`  
