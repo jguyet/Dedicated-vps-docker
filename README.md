@@ -5,16 +5,16 @@ create docker vm with dedicated ip addr
 you need a complementary ip on your server
 
 #### DOCKER INSTALL ON DEBIAN
-`apt-get update
-apt-get install docker-ce`
+`apt-get update`  
+`apt-get install docker-ce`
 
 #### IMPORT OS IMAGE
 `docker pull debian:jessie`
 
 #### CREATE DOCKERFILE
-`mkdir project-vm
-cd project-vm
-vim Dockerfile`
+`mkdir project-vm`  
+`cd project-vm`  
+`vim Dockerfile`  
 //See Dockerfile
 
 #### ADD on Dockerfile your configuration and build image after Dockerfile configured
@@ -30,44 +30,44 @@ vim Dockerfile`
 `docker create -it --net ipovh --ip yourIP --name CONTAINERNAME dockerImageID "/bin/bash"`
 
 #### START OR STOP VM
-`docker start CONTAINERNAME
-docker stop CONTAINERNAME`
+`docker start CONTAINERNAME`  
+`docker stop CONTAINERNAME`  
 
 #### GO TO VM
-`docker attach CONTAINERNAME`
+`docker attach CONTAINERNAME`  
 
 #### VM ssh installation :
-`apt-get install openssh-server
-vim /etc/ssh/sshd_config`
-add ->
+`apt-get install openssh-server`
+`vim /etc/ssh/sshd_config`  
+add ->  
 `PermitRootLogin yes`
 
 #### Netstat installation
-`apt-get install net-tools`
+`apt-get install net-tools`  
 
 #### Apache2 php5 mysql phpmyadmin
-`apt-get install apache2
-apt-get install php
-apt-get install mysql-server
-apt-get install phpmyadmin `
+`apt-get install apache2`  
+`apt-get install php`  
+`apt-get install mysql-server`  
+`apt-get install phpmyadmin `  
 
 #### For mysql if doesn't exists user
-`mysql
-CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
-FLUSH PRIVILEGES;`
+`mysql`  
+`CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';`  
+`GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';`  
+`FLUSH PRIVILEGES;`  
 
 #### Java8 installation
-`apt-get install default-jre
-apt-get install default-jdk
-apt-get install software-properties-common
-add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main"
-apt-get update
-apt-get install oracle-java8-installer
-javac -version`
+`apt-get install default-jre`  
+`apt-get install default-jdk`  
+`apt-get install software-properties-common`  
+`add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main"`  
+`apt-get update`  
+`apt-get install oracle-java8-installer`  
+`javac -version`  
 
-`Output :
-javac 1.8.0_111`
+`Output :`  
+`javac 1.8.0_111`
 
 #### DOCKER DOCUMENTATION
 https://docs.docker.com/engine/reference/commandline/docker/
