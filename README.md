@@ -47,7 +47,7 @@ add ->
 
 #### Apache2 php5 mysql phpmyadmin
 `apt-get install apache2`  
-`apt-get install php`  
+`apt-get install php5`  
 `apt-get install mysql-server`  
 `apt-get install phpmyadmin `  
 
