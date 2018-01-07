@@ -1,6 +1,9 @@
 # Dedicated-vps-docker
 create docker vm with dedicated ip addr
 
+## REQUIRE
+you need a complementary ip on your server
+
 #### DOCKER INSTALL ON DEBIAN
 `apt-get update
 apt-get install docker-ce`
