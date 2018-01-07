@@ -56,3 +56,6 @@ apt-get install phpmyadmin `
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
 FLUSH PRIVILEGES;`
+
+#### DOCKER DOCUMENTATION
+https://docs.docker.com/engine/reference/commandline/docker/
