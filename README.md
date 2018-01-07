@@ -63,9 +63,7 @@ add ->
 `apt-get install software-properties-common`  
 `add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main"`  
 `apt-get update`  
-`apt-get install oracle-java8-installer`  
-or  
-`apt-get install oracle-java9-installer`
+`apt-get install oracle-java8-installer` or `apt-get install oracle-java9-installer`  
 `javac -version`  
 There can be multiple Java installations on server enter next command and choice[]  
 `update-alternatives --config java`  
