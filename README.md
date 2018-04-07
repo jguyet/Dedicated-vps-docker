@@ -8,6 +8,9 @@ you need a complementary ip on your server
 `apt-get update`  
 `apt-get install docker-ce`
 
+#### DOCKER UPDATE DEFAULT STORAGE SPACE   
+`dockerd --storage-opt dm.basesize=200G`   
+
 #### IMPORT OS IMAGE
 `docker pull debian:jessie`
 
@@ -49,6 +52,7 @@ add ->
 `apt-get install apache2`  
 `apt-get install php5`  
 `apt-get install mysql-server`  
+`apt-get install php5-mysql php5-curl`   
 `apt-get install phpmyadmin `  
 
 #### For mysql if doesn't exists user
